@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div align="center">
+        <div align="center" class="border">
+            <div class="header">
+                <h2 class="word">
+                    <form action="/login" method="POST">
+                        <div class="msg">{{msg}}</div>
+                        <input id="username" name="username" type="text" placeholder="Enter Your Userrname:"
+                            class="textbox"></br>
+                        <input type="submit" value="Sign in" class="btn"></br>
+                    </form>
+                </h2>
+                <p class="bottom">Dont have account?<a class="bottom" href="/register">Sign Up Here</a></p>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
